@@ -125,7 +125,8 @@ body {
     color: var(--main-color);
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+    scroll-margin-top: 14rem;
 
 }
 
@@ -160,4 +161,133 @@ body {
     padding: 1rem;
     line-height: 1.8;
     text-transform: none;
+}
+.menu-conteiner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap:1.5rem;
+
+}
+
+.menu .menu-conteiner .box{
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    cursor: pointer;
+
+}
+
+.menu .menu-conteiner .box img{
+    height: 10rem;
+}
+
+
+.menu{
+    scroll-margin-top: 10rem
+}
+
+.menu .menu-conteiner .box h3{
+    color:#FFF;
+    font-size:2rem;
+    margin-top:1rem
+}
+
+.menu .menu-conteiner .box .price{
+    color: #FFF;
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    font-weight: 200;
+    padding: 0.5rem 0;
+}
+
+.menu .menu-conteiner .box .price span{
+    text-decoration: line-through;
+    font-size: 1.5rem;
+
+}
+
+.menu .menu-conteiner .box:hover{
+    background: #FFF;
+    
+}
+
+.menu .menu-conteiner .box:hover>*{
+    color: var(--black);
+    
+}
+
+.review .title{
+    margin: 5rem 0;
+}
+
+.review .menu-conteiner .box{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+    
+}
+
+.review .menu-conteiner .box p{
+    font-size: 1.5rem;
+    color: #FFF;
+    padding: 2rem 0;line-height: 1.8;
+}
+.review .menu-conteiner .box h3{
+    font-size: 1.5rem;
+    color: #FFF;
+    padding: 1rem 0;line-height: 1.8;
+    font-weight: 300;
+}
+
+.review .menu-conteiner .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+
+}
+
+
+
+
+
+.review{
+    scroll-margin-top: 15rem;
+}
+
+.address{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.address .title{
+    margin-top: 3rem;
+    margin-bottom: 9rem;
+}
+
+.map {
+    border-radius: 1%;
+    width: 500px;
+    height: 330px;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer .share {
+    padding: 2rem 0;
+}
+
+.footer .share img{
+    margin:0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+    margin-top: 13rem;
+}
+
+.footer .share img:hover{
+    background-color: var(--main-color);
 }
